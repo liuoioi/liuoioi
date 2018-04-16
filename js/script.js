@@ -58,7 +58,7 @@ $(function () {
   $(window).on('resize', function () {
     if ($(window).width() <= 1025) {
       skrollr.init().destroy(); // skrollr.init() returns the singleton created above
-		new WOW().init().destroy();
+		WOW().init().destroy();
     }
   });
 });
