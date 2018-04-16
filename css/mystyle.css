@@ -1,6 +1,9 @@
 html {
 	height:100% !important;
 }
+body.x-ios {
+  -webkit-backface-visibility：hidden;
+}
 body {
 	line-height: 1;
 	min-height:100%;
