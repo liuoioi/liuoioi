@@ -1,18 +1,5 @@
 
 
-// 滾動menu 改變
-$(document).ready(function() {
-    $window = $(window);
-    $(window).scroll(function() {
-
-        if ($window.scrollTop() > 100) //當卷軸大於100px時
-            $("header.index , header.page").addClass("active"); //在ID menufix 增加class
-        else
-            $("header.index , header.page").removeClass("active"); //小於100px時 移除 class
-
-    });
-
-});
 
 // back-top-js
 $(document).ready(function() {
