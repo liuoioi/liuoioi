@@ -50,7 +50,12 @@ $('#toggle').click(function() {
 $(document).ready(function () {
   // initialize skrollr if the window width is large enough
   if ($(window).width() > 1025) {
-    skrollr.init("#bg1");
+      skrollr.init({          
+            mobileCheck: function() {
+                //hack - forces mobile version to be off
+                return false;
+            }
+        });
   }
 
   // disable skrollr if the window is resized below 768px wide
